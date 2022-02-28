@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">1</layout>
+        <layout order="2">2</layout>
+        <layout order="3">3</layout>
+        <layout order="4">4</layout>
+        <layout active="1" order="5">Menu</layout>
+        <layout order="6">GameLevel</layout>
+        <event-sheet order="7">GameLevelLogic</event-sheet>
+        <event-sheet order="8">GameLogic</event-sheet>
+        <event-sheet order="9">MenuLogic</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="1" name="TouchControl" />
+        <family expanded="1" name="TanahPojok" />
+        <family expanded="1" name="TanahTengah" />
+        <family expanded="1" name="TanahLompat" />
+        <family expanded="1" name="Tombol" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Icon/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Level/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Gems/" />
+        <folder expanded="1" path="animation-folder/key/" />
+        <folder expanded="1" path="animation-folder/JumlahKunci/" />
+        <folder expanded="1" path="animation-folder/set3_background/" />
+        <folder expanded="1" path="animation-folder/set3_tiles/" />
+        <folder expanded="1" path="animation-folder/set3_hills/" />
+        <folder expanded="1" path="animation-folder/Utama/" />
+        <folder expanded="1" path="animation-folder/tileGreen_/" />
+        <folder expanded="1" path="animation-folder/tileGreen_2/" />
+        <folder expanded="1" path="animation-folder/tileGreen_3/" />
+        <folder expanded="1" path="animation-folder/tileGreen_4/" />
+        <folder expanded="1" path="animation-folder/MGerak/" />
+        <folder expanded="1" path="animation-folder/MJalan/" />
+        <folder expanded="1" path="animation-folder/tileGreen_5/" />
+        <folder expanded="1" path="animation-folder/tileGreen_7/" />
+        <folder expanded="1" path="animation-folder/tileGreen_8/" />
+        <folder expanded="1" path="animation-folder/MTerbang1/" />
+        <folder expanded="1" path="animation-folder/MTerbang2/" />
+        <folder expanded="1" path="animation-folder/blueGem/" />
+        <folder expanded="1" path="animation-folder/hudHeart_full/" />
+        <folder expanded="1" path="animation-folder/bonus/" />
+        <folder expanded="1" path="animation-folder/Window/" />
+        <folder expanded="1" path="animation-folder/complete/" />
+        <folder expanded="1" path="animation-folder/BRestart/" />
+        <folder expanded="1" path="animation-folder/keyGreen/" />
+        <folder expanded="1" path="animation-folder/doorGreen_top/" />
+        <folder expanded="1" path="animation-folder/doorGreen_lock/" />
+        <folder expanded="1" path="animation-folder/flatDark/" />
+        <folder expanded="1" path="animation-folder/flatDark2/" />
+        <folder expanded="1" path="animation-folder/flatDark3/" />
+        <folder expanded="1" path="animation-folder/set1_background/" />
+        <folder expanded="1" path="animation-folder/set1_tiles/" />
+        <folder expanded="1" path="animation-folder/set1_hills/" />
+        <folder expanded="1" path="animation-folder/tileBrown_/" />
+        <folder expanded="1" path="animation-folder/tileBrown_2/" />
+        <folder expanded="1" path="animation-folder/tileBrown_3/" />
+        <folder expanded="1" path="animation-folder/tileBrown_4/" />
+        <folder expanded="1" path="animation-folder/tileBrown_5/" />
+        <folder expanded="1" path="animation-folder/tileBrown_6/" />
+        <folder expanded="1" path="animation-folder/BNext/" />
+        <folder expanded="1" path="animation-folder/tileBrown_7/" />
+        <folder expanded="1" path="animation-folder/set2_background/" />
+        <folder expanded="1" path="animation-folder/set2_tiles/" />
+        <folder expanded="1" path="animation-folder/set2_hills/" />
+        <folder expanded="1" path="animation-folder/tileBlue_/" />
+        <folder expanded="1" path="animation-folder/tileBlue_2/" />
+        <folder expanded="1" path="animation-folder/tileBlue_3/" />
+        <folder expanded="1" path="animation-folder/tileBlue_4/" />
+        <folder expanded="1" path="animation-folder/tileBlue_5/" />
+        <folder expanded="1" path="animation-folder/tileBlue_6/" />
+        <folder expanded="1" path="animation-folder/tileBlue_7/" />
+        <folder expanded="1" path="animation-folder/MGerak2/" />
+        <folder expanded="1" path="animation-folder/MJalan2/" />
+        <folder expanded="1" path="animation-folder/set4_background/" />
+        <folder expanded="1" path="animation-folder/set4_tiles/" />
+        <folder expanded="1" path="animation-folder/set4_hills/" />
+        <folder expanded="1" path="animation-folder/tileYellow_2/" />
+        <folder expanded="1" path="animation-folder/tileYellow_3/" />
+        <folder expanded="1" path="animation-folder/tileYellow_4/" />
+        <folder expanded="1" path="animation-folder/tileYellow_5/" />
+        <folder expanded="1" path="animation-folder/tileYellow_6/" />
+        <folder expanded="1" path="animation-folder/tileYellow_7/" />
+        <folder expanded="1" path="animation-folder/MJalan3/" />
+        <folder expanded="1" path="animation-folder/MT/" />
+        <folder expanded="1" path="animation-folder/MTpanah1/" />
+        <folder expanded="1" path="animation-folder/BMusik/" />
+        <folder expanded="1" path="animation-folder/BEfek/" />
+        <folder expanded="1" path="animation-folder/backgroundMenu/" />
+        <folder expanded="1" path="animation-folder/BPlay/" />
+        <folder expanded="1" path="animation-folder/Window_/" />
+        <folder expanded="1" path="animation-folder/l/" />
+        <folder expanded="1" path="animation-folder/l2/" />
+        <folder expanded="1" path="animation-folder/BLevel/" />
+        <folder expanded="1" path="animation-folder/BHome/" />
+        <folder expanded="1" path="animation-folder/BBack/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_2/" />
+        <folder expanded="1" path="animation-folder/BSetting/" />
+        <folder expanded="1" path="animation-folder/BAbout/" />
+        <folder expanded="1" path="animation-folder/WindowCopy_3/" />
+        <folder expanded="1" path="animation-folder/Idle/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+    </folders-expanded>
+</c2uistate>

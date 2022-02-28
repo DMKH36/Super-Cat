@@ -1,0 +1,2293 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Tugas Game - Multimedia</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2ygg1b3zzx3s6</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="filechooser" version="1">File chooser</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1136</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Icon">
+            <object-type name="Gems" sid="167154718276528">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941820484497933" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                            <collision-poly>
+                                <point x="0.16129" y="0.188679" />
+                                <point x="0.5" y="0" />
+                                <point x="0.854839" y="0.169811" />
+                                <point x="1" y="0.490566" />
+                                <point x="0.806452" y="0.773585" />
+                                <point x="0.5" y="1" />
+                                <point x="0.209677" y="0.754717" />
+                                <point x="0.0322581" y="0.490566" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="key" sid="420816930005274">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="553241844136723" speed="5">
+                        <frame duration="1" hotspotX="0.511111" hotspotY="0.511111" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\extra\key.png">
+                            <collision-poly>
+                                <point x="0.311111" y="0.311111" />
+                                <point x="0.488889" y="0.0666667" />
+                                <point x="0.866667" y="0.133333" />
+                                <point x="0.933333" y="0.488889" />
+                                <point x="0.711111" y="0.711111" />
+                                <point x="0.488889" y="0.733333" />
+                                <point x="0.0666667" y="0.933333" />
+                                <point x="0.311111" y="0.488889" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="JumlahKunci" sid="627534809430933">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="632315783743953" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0.509434" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\extra\key0.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="0.509434" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\extra\key1.png">
+                            <collision-poly>
+                                <point x="0.0853659" y="0.264151" />
+                                <point x="0.256098" y="0.490566" />
+                                <point x="0.0243902" y="0.924528" />
+                                <point x="0.0792683" y="0.490566" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.509434" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\extra\key2.png">
+                            <collision-poly>
+                                <point x="0.0853659" y="0.264151" />
+                                <point x="0.5" y="0.113208" />
+                                <point x="0.609756" y="0.490566" />
+                                <point x="0.5" y="0.698113" />
+                                <point x="0.0243902" y="0.924528" />
+                                <point x="0.0792683" y="0.490566" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0.511111" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\extra\key3.png">
+                            <collision-poly>
+                                <point x="0.0880503" y="0.311111" />
+                                <point x="0.496855" y="0.0666667" />
+                                <point x="0.962264" y="0.133333" />
+                                <point x="0.987421" y="0.488889" />
+                                <point x="0.918239" y="0.711111" />
+                                <point x="0.496855" y="0.733333" />
+                                <point x="0.0188679" y="0.933333" />
+                                <point x="0.0880503" y="0.488889" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="set3_background" sid="708185178545063">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="227239475202461" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set3_background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set3_tiles" sid="429235679235710">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235150817868858" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500805" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set3_tiles.png">
+                        <collision-poly>
+                            <point x="0.100352" y="0.183575" />
+                            <point x="0.5" y="0.041868" />
+                            <point x="0.757923" y="0.442834" />
+                            <point x="1" y="0.499195" />
+                            <point x="0.877641" y="0.776167" />
+                            <point x="0.5" y="0.644122" />
+                            <point x="0.0228873" y="0.958132" />
+                            <point x="0" y="0.499195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set3_hills" sid="416543732238496">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718376958461480" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set3_hills.png">
+                        <collision-poly>
+                            <point x="0.355236" y="0.720833" />
+                            <point x="0.749487" y="0.508333" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="138672408721476">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="114068139519924">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_03.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="167767495685444">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="452301256235967">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+        </object-type>
+        <object-type name="Utama" sid="452427592210602">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="kunci" sid="238326376095414" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="740334528629249">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="755441276499902">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="663384469467279">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="241594528667631">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="479261785842321" speed="2">
+                    <frame duration="1" hotspotX="0.50173" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Idle 1.png" />
+                    <frame duration="1" hotspotX="0.50173" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Idle 2.png" />
+                </animation>
+                <animation framecount="8" loop="1" name="Jalan" pingpong="0" repeatcount="1" repeatto="0" sid="780500632854368" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jalan 1.png" />
+                    <frame duration="1" hotspotX="0.502041" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jalan 7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jalan 2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jalan 3.png" />
+                    <frame duration="1" hotspotX="0.502058" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jalan 4.png" />
+                    <frame duration="1" hotspotX="0.501992" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jalan 5.png" />
+                    <frame duration="1" hotspotX="0.502041" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jalan 6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jalan 8.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Loncat" pingpong="0" repeatcount="1" repeatto="0" sid="629739625830382" speed="5">
+                    <frame duration="1" hotspotX="0.501792" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jump 2.png" />
+                </animation>
+                <animation framecount="3" loop="0" name="Jatuh" pingpong="0" repeatcount="1" repeatto="0" sid="658335272954647" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jump 7.png" />
+                    <frame duration="1" hotspotX="0.502128" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jump 8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Jump 9.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Mati" pingpong="0" repeatcount="1" repeatto="0" sid="928213513147885" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Mati.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="719490439658393">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Mouse" sid="958629487611688">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="tileGreen_" sid="824280619608015">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="385716181642384">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763607707432347" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_24.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.359375" y="0.640625" />
+                            <point x="0.140625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_25.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.859375" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.703125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_2" sid="609217877071508">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="188556137937768">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="224154367564008" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_06.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_3" sid="239935103532234">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="359730038258590">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="435637928210477" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_04.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_4" sid="213839997867814">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="526756469714908">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="344581464123402" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_07.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MGerak" sid="198285784630941">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="988831399236336">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552108021456248" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Serangan 1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Serangan 2.png" />
+                    <frame duration="1" hotspotX="0.502392" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Serangan 3.png" />
+                    <frame duration="1" hotspotX="0.502857" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Serangan 4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Serangan 5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502392" hotspotY="1">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502857" hotspotY="1">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Mati" pingpong="0" repeatcount="1" repeatto="0" sid="972390903710071" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Mati.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MJalan" sid="405744378337445">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Jalan" sid="393728337931698" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="452173783444977">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="305908275601109">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="852560822400972" speed="10">
+                    <frame duration="1" hotspotX="0.502703" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Jalan 1.png" />
+                    <frame duration="1" hotspotX="0.502703" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Jalan 2.png" />
+                    <frame duration="1" hotspotX="0.502703" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Jalan 3.png" />
+                    <frame duration="1" hotspotX="0.502703" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Jalan 4.png" />
+                    <frame duration="1" hotspotX="0.502703" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Jalan 5.png" />
+                    <frame duration="1" hotspotX="0.502703" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Jalan 6.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Mati" pingpong="0" repeatcount="1" repeatto="0" sid="626356378897235" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 1 - Kucing Ninja\Musuh 1 - Mati.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_5" sid="510585566021418">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="350107491829650">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="893634968737204" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_15.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.203125" y="0.796875" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_16.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_7" sid="353026279106015">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="218629750129999">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300161999623841" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_11.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_8" sid="184247497692004">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="221122481433749">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="714020765792814" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_20.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MTerbang1" sid="946558871190106">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="828796546315316">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="373414082169659" speed="10">
+                    <frame duration="1" hotspotX="0.497959" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 4 - Kucing Terbang\Musuh (Kucing Terbang) - Pesawat 1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.497959" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 4 - Kucing Terbang\Musuh (Kucing Terbang) - Pesawat 2.png" />
+                    <frame duration="1" hotspotX="0.497959" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 4 - Kucing Terbang\Musuh (Kucing Terbang) - Pesawat 3.png" />
+                    <frame duration="1" hotspotX="0.497959" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 4 - Kucing Terbang\Musuh (Kucing Terbang) - Pesawat 4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MTerbang2" sid="146278809657963">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="202412926723641">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="104538415646838" speed="10">
+                    <frame duration="1" hotspotX="0.502041" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 4 - Kucing Terbang\Musuh (Kucing Terbang) - Pesawat 1.png" />
+                    <frame duration="1" hotspotX="0.502041" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 4 - Kucing Terbang\Musuh (Kucing Terbang) - Pesawat 2.png" />
+                    <frame duration="1" hotspotX="0.502041" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 4 - Kucing Terbang\Musuh (Kucing Terbang) - Pesawat 3.png" />
+                    <frame duration="1" hotspotX="0.502041" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 4 - Kucing Terbang\Musuh (Kucing Terbang) - Pesawat 4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blueGem" sid="826491184205336">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="634897888778912" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Items\blueGem.png">
+                        <collision-poly>
+                            <point x="0.181818" y="0.181818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.818182" y="0.181818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.818182" y="0.818182" />
+                            <point x="0.5" y="1" />
+                            <point x="0.181818" y="0.818182" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="900355716475469">
+            <plugin id="SpriteFontPlus" />
+            <instance-variables>
+                <instance-variable name="jumlah" sid="557582261879049" type="string" />
+            </instance-variables>
+            <texture original-source="E:\Documents\Putri\Game\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="hudHeart_full" sid="612479048896666">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="157527264252593" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.509434" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\extra\hudHeart_full.png">
+                        <collision-poly>
+                            <point x="0.0819672" y="0.0943396" />
+                            <point x="0.491803" y="0.0754717" />
+                            <point x="0.918033" y="0.0943396" />
+                            <point x="0.967213" y="0.490566" />
+                            <point x="0.786885" y="0.754717" />
+                            <point x="0.491803" y="0.981132" />
+                            <point x="0.213115" y="0.754717" />
+                            <point x="0.0327869" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bonus" sid="889665931183912">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="877854337479784">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="382766317877976">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596931552491086" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\extra\bonus.png">
+                        <collision-poly>
+                            <point x="0.18" y="0.25" />
+                            <point x="0.5" y="0.166667" />
+                            <point x="0.92" y="0.111111" />
+                            <point x="0.96" y="0.5" />
+                            <point x="0.96" y="0.944444" />
+                            <point x="0.5" y="0.944444" />
+                            <point x="0.16" y="0.777778" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Window" sid="484303366814181">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950390456428973" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="E:\Documents\Putri\Game\Platformer\GUI\Window.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="complete" sid="224962627521882">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="265007018738357" speed="0">
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\complete.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gameover.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0.00819672" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BRestart" sid="867961493254278">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="287218592284074" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_74.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_77.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="667197375210410">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="454914753439231">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="keyGreen" sid="891981696856697">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="536247722781949" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Items\keyGreen.png">
+                        <collision-poly>
+                            <point x="0.310345" y="0.3" />
+                            <point x="0.482759" y="0.0333333" />
+                            <point x="0.896552" y="0.1" />
+                            <point x="0.965517" y="0.5" />
+                            <point x="0.689655" y="0.7" />
+                            <point x="0.482759" y="0.7" />
+                            <point x="0.0344828" y="0.966667" />
+                            <point x="0.310345" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorGreen_top" sid="942711152728695">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636297622347849" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Other\doorGreen_top.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Other\doorOpen_top.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="doorGreen_lock" sid="965172254571773">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="467383594422995" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Other\doorGreen_lock.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Other\doorOpen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flatDark" sid="717185805918684">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539748182405676" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Control\flatDark\flatDark23.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flatDark2" sid="730382778014589">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218795515666665" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Control\flatDark\flatDark24.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flatDark3" sid="347876432414032">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="600026205482786" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Control\flatDark\flatDark25.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set1_background" sid="176964114234484">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="599880519358290" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set1_background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set1_tiles" sid="351004832409405">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="408094518240522" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500805" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set1_tiles.png">
+                        <collision-poly>
+                            <point x="0.100352" y="0.183575" />
+                            <point x="0.5" y="0.041868" />
+                            <point x="0.757923" y="0.442834" />
+                            <point x="1" y="0.499195" />
+                            <point x="0.877641" y="0.776167" />
+                            <point x="0.5" y="0.644122" />
+                            <point x="0.0228873" y="0.958132" />
+                            <point x="0" y="0.499195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set1_hills" sid="965315551546926">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="402278442379596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set1_hills.png">
+                        <collision-poly>
+                            <point x="0.355236" y="0.720833" />
+                            <point x="0.749487" y="0.508333" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground4" sid="338319539486993">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_27.png" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="133089349861231">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="218053673793735">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_02.png" />
+        </object-type>
+        <object-type name="tileBrown_" sid="284813510620649">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848695514823222" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_01.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_03.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBrown_2" sid="414244676361654">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="444365006549282" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_16.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_17.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBrown_3" sid="863777709238098">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706145327076421" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_25.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_26.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.578125" y="0.578125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBrown_4" sid="994769515305164">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="321514166612895" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_10.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_11.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBrown_5" sid="288238132870862">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="163895057643617" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_19.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_20.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBrown_6" sid="443238636732602">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656742365246808" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_04.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BNext" sid="709511385012492">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="920074870682605" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_46.png" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_49.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBrown_7" sid="343958826981805">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="200977333218113" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Brown tiles\tileBrown_08.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0754717" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0754717" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.90625" y="0.886792" />
+                            <point x="0.5" y="0.981132" />
+                            <point x="0.09375" y="0.886792" />
+                            <point x="0" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set2_background" sid="829825524219826">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="826801578067472" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set2_background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set2_tiles" sid="320327929855350">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="948340508149356" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500805" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set2_tiles.png">
+                        <collision-poly>
+                            <point x="0.100352" y="0.183575" />
+                            <point x="0.5" y="0.041868" />
+                            <point x="0.757923" y="0.442834" />
+                            <point x="1" y="0.499195" />
+                            <point x="0.877641" y="0.776167" />
+                            <point x="0.5" y="0.644122" />
+                            <point x="0.0228873" y="0.958132" />
+                            <point x="0" y="0.499195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set2_hills" sid="138982125994758">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690945940740399" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set2_hills.png">
+                        <collision-poly>
+                            <point x="0.355236" y="0.720833" />
+                            <point x="0.749487" y="0.508333" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_" sid="674761668902545">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="357971327535045">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="906756291996146" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_03.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground6" sid="941517407361103">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="383694855214191">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_05.png" />
+        </object-type>
+        <object-type name="tileBlue_2" sid="565223799615943">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="106030474340981">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="861705812408504" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_07.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_3" sid="816364973418083">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="481471408102956">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="133007321541312" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_04.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_06.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_4" sid="468704757828229">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="614763936186322">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="644062936285938" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_24.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_25.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.859375" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.703125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_5" sid="584940707468264">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="629606348557893">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="551723001387293">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="391241196412484" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_15.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.203125" y="0.796875" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_16.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_6" sid="756805474692696">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="385658949905194">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="335670912140633" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_18.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_19.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_7" sid="630148306337593">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="239215936795409">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="634033445827718" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_09.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_10.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MGerak2" sid="814113123229231">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="656076860520705">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Gerak" pingpong="0" repeatcount="1" repeatto="0" sid="976088036863010" speed="5">
+                    <frame duration="1" hotspotX="0.574661" hotspotY="0.82" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MG1.png" />
+                    <frame duration="1" hotspotX="0.574661" hotspotY="0.82" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MG2.png" />
+                    <frame duration="1" hotspotX="0.574661" hotspotY="0.82" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MG3.png" />
+                    <frame duration="1" hotspotX="0.574661" hotspotY="0.82" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MG4.png" />
+                    <frame duration="1" hotspotX="0.574661" hotspotY="0.82" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MG5.png" />
+                    <frame duration="1" hotspotX="0.425339" hotspotY="0.82">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.425339" hotspotY="0.82">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.425339" hotspotY="0.82">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.425339" hotspotY="0.82">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.425339" hotspotY="0.82">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Mati" pingpong="0" repeatcount="1" repeatto="0" sid="234892105126332" speed="5">
+                    <frame duration="1" hotspotX="0.502674" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MMati2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MJalan2" sid="523681704959279">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Jalan" sid="708305771136630" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="377398318990993">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="646853418188072">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Jalan" pingpong="0" repeatcount="0" repeatto="0" sid="181413014842881" speed="10">
+                    <frame duration="1" hotspotX="0.429864" hotspotY="0.935294" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438914" hotspotY="0.929412" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ2.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438914" hotspotY="0.929412" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ3.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438914" hotspotY="0.929412" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ4.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438914" hotspotY="0.929412" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ5.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438914" hotspotY="0.929412" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ6.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Mati" pingpong="0" repeatcount="1" repeatto="0" sid="719061899460830" speed="5">
+                    <frame duration="1" hotspotX="0.502674" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MMati2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set4_background" sid="358630258923221">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="342339415090793" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set4_background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set4_tiles" sid="261520294950739">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="890479140973031" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500805" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set4_tiles.png">
+                        <collision-poly>
+                            <point x="0.100352" y="0.183575" />
+                            <point x="0.5" y="0.041868" />
+                            <point x="0.757923" y="0.442834" />
+                            <point x="1" y="0.499195" />
+                            <point x="0.877641" y="0.776167" />
+                            <point x="0.5" y="0.644122" />
+                            <point x="0.0228873" y="0.958132" />
+                            <point x="0" y="0.499195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set4_hills" sid="774213890968623">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908773942584739" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Backgrounds\set4_hills.png">
+                        <collision-poly>
+                            <point x="0.354508" y="0.720833" />
+                            <point x="0.748975" y="0.510417" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground7" sid="449039303844750">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_06.png" />
+        </object-type>
+        <object-type name="tileYellow_2" sid="820299950079851">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403842748164391" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_05.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_07.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_3" sid="747331644861008">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="835257897193290" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_10.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_11.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_4" sid="891032032275165">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="379789550917852" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_19.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_20.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_5" sid="257975463093526">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="735568461206576">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="181382218031865" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_16.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.890625" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_17.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_6" sid="883802707394967">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="103837452244347" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_25.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_26.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.578125" y="0.578125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileYellow_7" sid="754569519134358">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="639239073491958" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_08.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MJalan3" sid="144409144229051">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Jalan" sid="124295561468253" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="782124317069455">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="279571192868339">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Jalan" pingpong="0" repeatcount="0" repeatto="0" sid="539897899588383" speed="10">
+                    <frame duration="1" hotspotX="0.429864" hotspotY="0.935294" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438914" hotspotY="0.929412" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ2.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438914" hotspotY="0.929412" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ3.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438914" hotspotY="0.929412" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ4.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438914" hotspotY="0.929412" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ5.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.438914" hotspotY="0.929412" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MJ6.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.929412" />
+                            <point x="0" y="0.929412" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Mati" pingpong="0" repeatcount="1" repeatto="0" sid="757457247755396" speed="5">
+                    <frame duration="1" hotspotX="0.502674" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 2 - Kucing Ksatria\MMati2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MT" sid="460770852157630">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="326677776183755">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523031792785324" speed="1">
+                    <frame duration="1" hotspotX="0.403292" hotspotY="0.981308" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 3 - Kucing Oren\MT3.png">
+                        <collision-poly>
+                            <point x="0.736626" y="0.483645" />
+                            <point x="0.691358" y="0.649533" />
+                            <point x="0.469136" y="1" />
+                            <point x="0.144033" y="1" />
+                            <point x="0" y="0.764018" />
+                            <point x="0" y="0.294392" />
+                            <point x="0.1893" y="0.0817757" />
+                            <point x="0.399177" y="0.0046729" />
+                            <point x="0.572016" y="0.397197" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.403292" hotspotY="0.981308" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 3 - Kucing Oren\MT1.png">
+                        <collision-poly>
+                            <point x="1" y="0.35514" />
+                            <point x="0.786008" y="0.401869" />
+                            <point x="0.853909" y="0.672898" />
+                            <point x="0.452675" y="1" />
+                            <point x="0.115226" y="0.738317" />
+                            <point x="0.115226" y="0.233645" />
+                            <point x="0.335391" y="0" />
+                            <point x="0.539095" y="0" />
+                            <point x="0.68107" y="0.317757" />
+                            <point x="1" y="0.261683" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.403292" hotspotY="0.981308" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 3 - Kucing Oren\MT2.png">
+                        <collision-poly>
+                            <point x="1" y="0.294394" />
+                            <point x="0.495885" y="1" />
+                            <point x="0.36214" y="1" />
+                            <point x="0.0658436" y="0.742991" />
+                            <point x="0.0658436" y="0.242991" />
+                            <point x="0.26749" y="0" />
+                            <point x="0.502058" y="0" />
+                            <point x="0.621399" y="0.228972" />
+                            <point x="1" y="0.163552" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Mati" pingpong="0" repeatcount="1" repeatto="0" sid="914963319465088" speed="5">
+                    <frame duration="1" hotspotX="0.502564" hotspotY="1" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 3 - Kucing Oren\MTmati.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MTpanah1" sid="590691948410637">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="632199793371384">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="912054820436611">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="711983604560126">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="150840910524631" speed="0">
+                    <frame duration="1" hotspotX="0.00526316" hotspotY="0.466667" original-source="E:\Documents\Putri\Game\Character by Me\Musuh 3 - Kucing Oren\MTpanah.png">
+                        <collision-poly>
+                            <point x="0.994737" y="0.533333" />
+                            <point x="0.984211" y="0.8" />
+                            <point x="0.5" y="0.8" />
+                            <point x="0.190789" y="0.783333" />
+                            <point x="0.132895" y="1" />
+                            <point x="0.0184211" y="0.533333" />
+                            <point x="0.00526315" y="0.466667" />
+                            <point x="0.0263158" y="0.333333" />
+                            <point x="0.131579" y="0" />
+                            <point x="0.192105" y="0.2" />
+                            <point x="0.5" y="0.266667" />
+                            <point x="0.973684" y="0.333333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground8" sid="372235861271122">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\Tiles\Yellow tiles\tileYellow_04.png" />
+        </object-type>
+        <object-type name="Audio" sid="605575712541306">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Function" sid="560143347469428">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="BMusik" sid="938299638300817">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="754443348456751" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button 2\Button_09.png">
+                        <collision-poly>
+                            <point x="0.0710383" y="0.0684211" />
+                            <point x="0.497268" y="0" />
+                            <point x="0.912568" y="0.0842105" />
+                            <point x="0.972678" y="0.5" />
+                            <point x="0.896175" y="0.9" />
+                            <point x="0.497268" y="0.952632" />
+                            <point x="0.0874317" y="0.915789" />
+                            <point x="0.00546448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button 2\Button_12.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.0684211" />
+                            <point x="0.5" y="0" />
+                            <point x="0.912088" y="0.0842105" />
+                            <point x="0.978022" y="0.5" />
+                            <point x="0.895604" y="0.9" />
+                            <point x="0.5" y="0.952632" />
+                            <point x="0.0879121" y="0.915789" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BEfek" sid="574181559640369">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="512329334024019" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button 2\Button_13.png">
+                        <collision-poly>
+                            <point x="0.0710383" y="0.0684211" />
+                            <point x="0.497268" y="0" />
+                            <point x="0.912568" y="0.0842105" />
+                            <point x="0.972678" y="0.5" />
+                            <point x="0.896175" y="0.9" />
+                            <point x="0.497268" y="0.952632" />
+                            <point x="0.0874317" y="0.915789" />
+                            <point x="0.00546448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button 2\Button_16.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.0684211" />
+                            <point x="0.5" y="0" />
+                            <point x="0.912088" y="0.0842105" />
+                            <point x="0.978022" y="0.5" />
+                            <point x="0.895604" y="0.9" />
+                            <point x="0.5" y="0.952632" />
+                            <point x="0.0879121" y="0.915789" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="backgroundMenu" sid="843247825641742">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552532780025259" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="E:\Documents\Putri\Game\Platformer\Abstract Platformer\PNG\extra\backgroundMenu.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="594094714853991">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="474708051158439">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BPlay" sid="744768287930213">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550187361723389" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Play2.png">
+                        <collision-poly>
+                            <point x="0.037037" y="0.0824742" />
+                            <point x="0.5" y="0.0103093" />
+                            <point x="0.958333" y="0.0927835" />
+                            <point x="0.986111" y="0.494845" />
+                            <point x="0.949074" y="0.886598" />
+                            <point x="0.5" y="0.938144" />
+                            <point x="0.0462963" y="0.896907" />
+                            <point x="0.00925926" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502326" hotspotY="0.505155" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Play1.png">
+                        <collision-poly>
+                            <point x="0.0372093" y="0.0824742" />
+                            <point x="0.497674" y="0.0206186" />
+                            <point x="0.95814" y="0.0927835" />
+                            <point x="0.990698" y="0.494845" />
+                            <point x="0.953488" y="0.896907" />
+                            <point x="0.497674" y="0.948454" />
+                            <point x="0.0418605" y="0.907216" />
+                            <point x="0.00930233" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Window_" sid="440186183802864">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="789398161626828" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\level select\Window_03.png">
+                        <collision-poly>
+                            <point x="0.0948276" y="0.11828" />
+                            <point x="0.5" y="0" />
+                            <point x="0.905172" y="0.11828" />
+                            <point x="0.989943" y="0.5" />
+                            <point x="0.979885" y="0.97491" />
+                            <point x="0.0158046" y="0.980287" />
+                            <point x="0.00143678" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="l" sid="796332880719409">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="349412542555139" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.511628" original-source="E:\Documents\Putri\Game\Platformer\GUI\level select\l.png">
+                        <collision-poly>
+                            <point x="0.00990099" y="0.0232558" />
+                            <point x="0.49505" y="0.418605" />
+                            <point x="0.970297" y="0.0697674" />
+                            <point x="0.980198" y="0.488372" />
+                            <point x="0.960396" y="0.906977" />
+                            <point x="0.49505" y="0.976744" />
+                            <point x="0.029703" y="0.930233" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="l2" sid="205096032076156">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="990010609066632" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="E:\Documents\Putri\Game\Platformer\GUI\level select\l2.png">
+                        <collision-poly>
+                            <point x="0.0588235" y="0.186047" />
+                            <point x="0.5" y="0.162791" />
+                            <point x="0.919118" y="0.255814" />
+                            <point x="0.963235" y="0.488372" />
+                            <point x="0.970588" y="0.906977" />
+                            <point x="0.0294118" y="0.906977" />
+                            <point x="0.0294118" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BLevel" sid="522875426761695">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="level" sid="206130429884123" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527727567158822" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\level select\Button_01.png">
+                        <collision-poly>
+                            <point x="0.0724638" y="0.0699301" />
+                            <point x="0.5" y="0" />
+                            <point x="0.913043" y="0.0839161" />
+                            <point x="0.971014" y="0.496504" />
+                            <point x="0.891304" y="0.895105" />
+                            <point x="0.5" y="0.951049" />
+                            <point x="0.0942029" y="0.909091" />
+                            <point x="0.00724638" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\level select\Button_05.png">
+                        <collision-poly>
+                            <point x="0.0724638" y="0.0699301" />
+                            <point x="0.5" y="0" />
+                            <point x="0.905797" y="0.0909091" />
+                            <point x="0.971014" y="0.496504" />
+                            <point x="0.891304" y="0.895105" />
+                            <point x="0.5" y="0.951049" />
+                            <point x="0.0869565" y="0.916084" />
+                            <point x="0.00724638" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont2" sid="854305088781990">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="E:\Documents\Putri\Game\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="BHome" sid="608461879262873">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563956735322272" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_53.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_50.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BBack" sid="136515453597517">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299237190872661" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_65.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_62.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.902174" y="0.09375" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_" sid="410099553306592">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="975984365227690" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501035" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\widow\Window - Copy_06.png">
+                        <collision-poly>
+                            <point x="0.0945274" y="0.118012" />
+                            <point x="0.499171" y="0" />
+                            <point x="0.905473" y="0.118012" />
+                            <point x="0.99005" y="0.498965" />
+                            <point x="0.980099" y="0.975155" />
+                            <point x="0.0149254" y="0.981366" />
+                            <point x="0" y="0.498965" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_2" sid="643745441724675">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="452734492683492" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.514286" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\widow\Window - Copy_08.png">
+                        <collision-poly>
+                            <point x="0.0263158" y="0.0857143" />
+                            <point x="0.5" y="0.2" />
+                            <point x="0.947368" y="0.171429" />
+                            <point x="0.991228" y="0.485714" />
+                            <point x="0.938596" y="0.8" />
+                            <point x="0.5" y="0.942857" />
+                            <point x="0.00877193" y="0.971429" />
+                            <point x="0" y="0.485714" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BSetting" sid="769750941199615">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="915040148033516" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_32.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_29.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BAbout" sid="380451963545757">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="456291301106699" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_69.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\button\Button_66.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground9" sid="456373066846882">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="WindowCopy_3" sid="711881915029279">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509373661259921" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="E:\Documents\Putri\Game\Platformer\GUI\gui\widow\Window - Copy_07.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text3" sid="245310834921672">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Idle" sid="347676883774624">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="615084821153690" speed="5">
+                    <frame duration="1" hotspotX="0.502242" hotspotY="0.502392" original-source="E:\Documents\Putri\Game\Character by Me\Karakter Utama\Idle.png">
+                        <collision-poly>
+                            <point x="0.0807175" y="0.0861244" />
+                            <point x="0.497758" y="0.502392" />
+                            <point x="0.825112" y="0.186603" />
+                            <point x="0.973094" y="0.497608" />
+                            <point x="0.721973" y="0.703349" />
+                            <point x="0.497758" y="0.803828" />
+                            <point x="0.282511" y="0.698565" />
+                            <point x="0.251121" y="0.497608" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FileChooser" sid="103730010942399">
+            <plugin id="filechooser" />
+        </object-type>
+        <object-type name="Sprite" sid="486246821254698">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="886488450791246" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Pictures\Me.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="TouchControl" plugin-id="Sprite" sid="372969633792048">
+            <members>
+                <member>flatDark</member>
+                <member>flatDark2</member>
+                <member>flatDark3</member>
+            </members>
+        </family>
+        <family name="TanahPojok" plugin-id="Sprite" sid="276566560888740">
+            <members>
+                <member>tileBrown_</member>
+                <member>tileBrown_4</member>
+                <member>tileBrown_5</member>
+                <member>tileBrown_6</member>
+                <member>tileYellow_2</member>
+                <member>tileYellow_3</member>
+                <member>tileYellow_4</member>
+                <member>tileYellow_7</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Solid" sid="708987369022631">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="TanahTengah" plugin-id="TiledBg" sid="658939960572949">
+            <members>
+                <member>TiledBackground4</member>
+                <member>TiledBackground5</member>
+                <member>TiledBackground7</member>
+                <member>TiledBackground8</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Solid" sid="248134571802845">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="TanahLompat" plugin-id="Sprite" sid="174078601122984">
+            <members>
+                <member>tileBrown_2</member>
+                <member>tileBrown_3</member>
+                <member>tileBrown_7</member>
+                <member>tileYellow_5</member>
+                <member>tileYellow_6</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="236252783873302">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Tombol" plugin-id="Sprite" sid="822257315402423">
+            <members>
+                <member>BAbout</member>
+                <member>BBack</member>
+                <member>BEfek</member>
+                <member>BHome</member>
+                <member>BLevel</member>
+                <member>BMusik</member>
+                <member>BNext</member>
+                <member>BPlay</member>
+                <member>BRestart</member>
+                <member>BSetting</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout-folder name="Level">
+            <layout>1.xml</layout>
+            <layout>2.xml</layout>
+            <layout>3.xml</layout>
+            <layout>4.xml</layout>
+        </layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>GameLevel.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>GameLogic.xml</event-sheet>
+        <event-sheet>MenuLogic.xml</event-sheet>
+        <event-sheet>GameLevelLogic.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+        <global-instance type="Mouse" uid="7" />
+        <global-instance type="Touch" uid="68">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="406">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="410" />
+    </global-instances>
+    <sounds-folder>
+        <file name="Collect Gem.m4a" />
+        <file name="Collect Gem.ogg" />
+        <file name="Collect Key.m4a" />
+        <file name="Collect Key.ogg" />
+        <file name="EnemyHit.m4a" />
+        <file name="EnemyHit.ogg" />
+        <file name="Hit.m4a" />
+        <file name="Hit.ogg" />
+        <file name="Jingle Lose.m4a" />
+        <file name="Jingle Lose.ogg" />
+        <file name="Jingle Win.m4a" />
+        <file name="Jingle Win.ogg" />
+        <file name="click.m4a" />
+        <file name="click.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="MattOglseby - 1.m4a" />
+        <file name="MattOglseby - 1.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

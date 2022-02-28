@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MenuLogic</name>
+    <events>
+        <event-block sid="299881166745629">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="993408302649040" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="491817020181843" type="Audio" />
+                <action id="-4" name="Set layer visible" sid="451249084068238" type="System">
+                    <param id="0" name="Layer">&quot;About&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="504270722803667">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="324273622617124" type="System">
+                            <param id="0" name="Variable">Musik</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="574839081436341" type="Audio">
+                            <param id="0" name="Audio file">MattOglseby - 1</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="877497271836482" type="BMusik">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="933413689428538">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="752140304980260" type="System">
+                            <param id="0" name="Variable">Musik</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;off&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="363644240169124" type="BMusik">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="547823432533859">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="500151131803329" type="System">
+                            <param id="0" name="Variable">Efek</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="826264002184360" type="BEfek">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="657987456067556">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="391952959454001" type="System">
+                            <param id="0" name="Variable">Efek</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;off&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="333015409531310" type="BEfek">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="705874977726322">
+            <conditions>
+                <condition id="17" name="On tap object" sid="468290717292074" type="Touch">
+                    <param id="0" name="Object">BBack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="857167878559168" type="BBack">
+                    <param id="0" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="373171180845108" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="286206011918569" type="System">
+                    <param id="0" name="Layer">&quot;About&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="429819012533257">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="971221907401248" type="System">
+                            <param id="0" name="Variable">Efek</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="304900540585608" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="181526252605565">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="473843409591578" type="System">
+                    <param id="0" name="Layer">&quot;About&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="253046692015824">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="787686695134806" type="Touch">
+                            <param id="0" name="Object">Tombol</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="431691182466047">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="969150684054375" type="System">
+                                    <param id="0" name="Variable">Efek</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;on&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="340134851676913" type="Audio">
+                                    <param id="0" name="Audio file">click</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="235407091201776">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="559328287738659" type="Touch">
+                            <param id="0" name="Object">BPlay</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Start" sid="375354420722000" type="BPlay">
+                            <param id="0" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="812342943433252" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="763825078525504" type="System">
+                            <param id="0" name="Layout">GameLevel</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="847796676953663">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="582579827105686" type="Touch">
+                            <param id="0" name="Object">BMusik</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="326787936103332">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="639960904966221" type="System">
+                                    <param id="0" name="Variable">Musik</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;on&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Stop" sid="924738055045706" type="Audio">
+                                    <param id="0" name="Tag">&quot;musik&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="880221780174772" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="230221122801923" type="System">
+                                    <param id="0" name="Variable">Musik</param>
+                                    <param id="1" name="Value">&quot;off&quot;</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="785825796337780" type="BMusik">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="989741376495701">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="592010402718889" type="System">
+                                    <param id="0" name="Variable">Musik</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;off&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="741624773789434" type="Audio">
+                                    <param id="0" name="Audio file">MattOglseby - 1</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-10</param>
+                                    <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="490302653199558" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="785201557871890" type="System">
+                                    <param id="0" name="Variable">Musik</param>
+                                    <param id="1" name="Value">&quot;on&quot;</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="739637469463828" type="BMusik">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="359892823775362">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="338043800353890" type="Touch">
+                            <param id="0" name="Object">BEfek</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="739363789885203">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="694116812737192" type="System">
+                                    <param id="0" name="Variable">Efek</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;on&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="533454908535337" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="823803026551043" type="System">
+                                    <param id="0" name="Variable">Efek</param>
+                                    <param id="1" name="Value">&quot;off&quot;</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="954054686258512" type="BEfek">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="435284173676174">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="928250058221456" type="System">
+                                    <param id="0" name="Variable">Efek</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;off&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="433076523855247" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="763081458467659" type="System">
+                                    <param id="0" name="Variable">Efek</param>
+                                    <param id="1" name="Value">&quot;on&quot;</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="480531379316063" type="BEfek">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="231984057574159">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="260964033922006" type="Touch">
+                            <param id="0" name="Object">BAbout</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Start" sid="830609618793718" type="BAbout">
+                            <param id="0" name="From">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="325284249392454" type="System">
+                            <param id="0" name="Layer">&quot;About&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

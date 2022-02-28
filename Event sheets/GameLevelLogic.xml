@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameLevelLogic</name>
+    <events>
+        <variable constant="0" name="Level" sid="728971897182407" static="0" type="number">1</variable>
+        <event-block sid="566705410519221">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="833966795177074" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="945875757628495">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="826161678088220" type="BLevel">
+                            <param id="0" name="Instance variable">level</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">Level</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="597018829292246" type="BLevel">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="606096302561770" type="BLevel">
+                            <param id="0" name="Object">SpriteFont2</param>
+                            <param id="1" name="Layer">&quot;PilMenu&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="667580590435893" type="SpriteFont2">
+                            <param id="0" name="Text">BLevel.level</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="996332293065262">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="586553435042298" type="BLevel">
+                            <param id="0" name="Instance variable">level</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Level</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="275786263441564" type="BLevel">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="595573005351795">
+            <conditions>
+                <condition id="17" name="On tap object" sid="577026416367691" type="Touch">
+                    <param id="0" name="Object">BLevel</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="603772967730698" type="BLevel">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="296174852716239" type="System">
+                    <param id="0" name="Layout">str(BLevel.level)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="714671319158781">
+            <conditions>
+                <condition id="17" name="On tap object" sid="115904863223426" type="Touch">
+                    <param id="0" name="Object">Tombol</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="202363960292884">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="352777604293459" type="System">
+                            <param id="0" name="Variable">Efek</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="177849153273928" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="644461502670126">
+            <conditions>
+                <condition id="17" name="On tap object" sid="449298929389030" type="Touch">
+                    <param id="0" name="Object">BBack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="419079081315620" type="BBack">
+                    <param id="0" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="867072622822129" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="936044287593961" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
